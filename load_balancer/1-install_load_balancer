@@ -10,11 +10,11 @@ sudo apt-get -y install haproxy
 # edit config file
 server_config=\
 "
-frontend  skomaiya_frontend
+frontend  hephzy_frontend
         bind *:80
         mode http
-        default_backend skomaiya_backend
-backend skomaiya_backend
+        default_backend hephzy_backend
+backend hephzy_backend
         balance roundrobin
     server web-01 107.21.139.169:80 check
     server web-02 34.224.169.100:80 check

@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-# Configuring  Nginx server so that /redirect_me is redirecting to another page.
+# Check if Nginx is installed
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
-
-echo "Holberton School" | sudo tee /var/www/html/index.html
 
 # redirection config
 replacement="server_name _;\\

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Configuring Nginx server to have a custom 404 page
-# Containing the string Ceci n'est pas une page
+# Configuring Nginx custom 404 page
 
+# Install Nginx if not already installed
 sudo apt-get update
 sudo apt-get install -y nginx
 
